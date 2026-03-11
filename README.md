@@ -1,5 +1,7 @@
 # Чат с Gemini
 
+[Демо для просмтра](https://chats-murex-iota.vercel.app/)
+
 Веб-приложение: поле ввода, отправка в API Google Gemini (Google AI Studio), отображение ответа.
 
 ## Стек
