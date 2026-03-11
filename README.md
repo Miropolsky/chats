@@ -1,6 +1,6 @@
-# Чат с Gemini — тестовое задание
+# Чат с Gemini
 
-Веб-приложение: поле ввода, отправка в API Google Gemini (Google AI Studio), отображение ответа. Опционально — голосовой ввод (Web Speech API).
+Веб-приложение: поле ввода, отправка в API Google Gemini (Google AI Studio), отображение ответа.
 
 ## Стек
 
