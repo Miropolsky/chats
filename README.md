@@ -86,3 +86,23 @@ npm run preview
 ```
 
 **Сервер:** как обычно `npm start` в папке `server`. Раздавать статику из `client/dist` можно через Express (при необходимости добавьте `express.static`).
+
+## Деплой
+
+Приложение задеплоено:
+
+- **Backend:** [https://chats-y47a.onrender.com](https://chats-y47a.onrender.com) (Render)
+- **Frontend:** [https://chats-murex-iota.vercel.app](https://chats-murex-iota.vercel.app) (Vercel)
+
+### Локальная разработка
+
+При локальной разработке фронтенд автоматически использует прокси для запросов к локальному бэкенду (`http://localhost:3001`). В продакшене используется бэкенд на Render.
+
+### Переменные окружения для деплоя
+
+**Vercel (Frontend):**
+- `VITE_API_URL` = `https://chats-y47a.onrender.com` (опционально, по умолчанию используется продакшен URL)
+
+**Render (Backend):**
+- `GOOGLE_GEMINI_API_KEY` = ваш API ключ
+- `PORT` = (оставляйте пустым, Render сам назначит)

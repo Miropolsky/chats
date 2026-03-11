@@ -1,3 +1,5 @@
+import { API_URL } from '../config';
+
 export interface ChatResponse {
   reply: string;
 }
@@ -7,7 +9,11 @@ export interface ChatError {
 }
 
 export async function sendMessage(message: string): Promise<string> {
-  const res = await fetch('/api/chat', {
+  const url = API_URL 
+    ? `${API_URL}/api/chat` 
+    : '/api/chat';
+    
+  const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message }),
